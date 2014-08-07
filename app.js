@@ -1,3 +1,1 @@
-app.controller("MainController", function($scope){
-
-});
+var app = angular.module('MyTutorialApp',[]);
