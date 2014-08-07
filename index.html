@@ -8,7 +8,10 @@
   </head>
   <body>
     <div id='content' ng-app='MyFirstTutorialApp' ng-controller='MainController'>
-      {{ understand }}
+    <select ng-model='selectedPerson' ng-options='obj.name for obj in people'></select>
+    <select ng-model='selectedGenre'>
+      <option ng-repeat='label in people[selectedPerson.id].music'>{{label}}</option>
+    </select>
     </div>
   </body>
 </html>
